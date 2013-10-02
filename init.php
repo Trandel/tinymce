@@ -5,6 +5,7 @@ tinymce.init({
     theme: "trandel",
     inline: true,
     invalid_elements : "div",
+    extended_valid_elements : "object[*],embed[*]",
     plugins: [
         "advlist autolink lists link image charmap anchor",
         "visualblocks code fullscreen",
@@ -33,6 +34,7 @@ tinymce.init({
     theme: "trandel",
     inline: true,
 //    invalid_elements : "div",
+    extended_valid_elements : "object[*],embed[*]",
     plugins: [
         "advlist autolink lists link image charmap anchor",
         "visualblocks code fullscreen",
