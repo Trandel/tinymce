@@ -1,0 +1,673 @@
+/* GENERAL */
+/*
+html {
+	background-color: #EAEAEA;
+}
+*/
+body {
+	background-color: white;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+        margin: 8px auto 8px auto;
+        padding: 0 8px;
+}
+#megaTopper {
+	font: bold 21px "Lucida Grande", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	letter-spacing: -1px;
+}
+.text_box, .list_box, .button
+{
+	background-color: #eeeeee;
+	border: 1px solid #666666;
+}
+
+.noimg img, .noimg img {
+	display: none;
+}
+/* tabs design */
+#TabList {
+	border-bottom: 1px solid #c0c0c0;
+	font: bold 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0 0 19px 0;
+}
+ul#TabList li {
+	display: inline;
+	float: left;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	background-image: url(http://cdn.images.autosport.com/greybg2.gif);
+	color: silver;
+	border-top: 1px solid #C0C0C0;
+	border-left: 1px solid #C0C0C0;
+	border-right: 1px solid #C0C0C0;
+	margin: 0 1px 0 0;
+	padding: 2px 6px 4px 6px;
+	text-decoration: none
+}
+ul#TabList a, ul#TabList a:link, ul#TabList a:visited {
+	color: #818BAB;
+}
+ul#TabList a:hover, ul#TabList a:focus, ul#TabList a:active {
+	text-decoration: underline;
+}
+ul#TabList li.SelectedTab {
+	background: #FFFFFF;
+	border-bottom: none;
+	color: #cc0000;
+	font-weight: bold;
+	padding: 2px 6px 5px 6px;
+}
+/* fancy tabs */
+    #header {
+      float: left;
+      width: 100%;
+      background: url("http://cdn.images.autosport.com/tabsbg.gif") repeat-x bottom;
+      font-size: 11px;
+	  font-family: Verdana;
+      line-height: normal;
+      }
+    #header ul {
+      margin: 0;
+      padding: 10px 10px 0;
+      list-style: none;
+      }
+    #header li {
+      float: left;
+      background: url("http://cdn.images.autosport.com/tabsleft.gif") no-repeat left top;
+      margin: 0;
+      padding: 0 0 0 9px;
+      }
+    #header a {
+	  float: left;
+      display: block;
+      background: url("http://cdn.images.autosport.com/tabsright.gif") no-repeat right top;
+      padding: 5px 15px 4px 6px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #708090;
+      }
+ 	/* Commented Backslash Hack
+     hides rule from IE5-Mac \*/
+  	#header a { float: none; }
+  	/* End IE5-Mac hack */
+
+	#header a:hover {
+      color: #800000;
+      }
+    #header #current {
+      background-image: url("http://cdn.images.autosport.com/tabsleft_on.gif");
+      }
+    #header #current a {
+      background-image: url("http://cdn.images.autosport.com/tabsright_on.gif");
+      color: #000000;
+      padding-bottom: 5px;
+      }
+
+/* new elements */
+	.pictable {
+		background-image: url(http://cdn.images.autosport.com/bluebg1px.gif);
+		margin-left: 10px;
+		margin-bottom: 4px;
+	}
+	.pictable .pictext {
+		margin-top: 3px;
+ 		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color: White;
+		font-size: 11px;
+	}
+	.pictable .piclink {
+ 		font-family: Arial, Helvetica, sans-serif;
+		color: White;
+		font-size: 9px;
+	}
+	.searchbox {
+		height: 19px;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		border-bottom: 1px inset Silver;
+		border-left: 1px outset Silver;
+		border-right: 1px inset Silver;
+		border-top: 1px outset Silver;
+		vertical-align: middle;
+		background-color: #FFFFFF;
+		color: #000000;
+	}
+	.countdown2 {
+		height: 14px;
+		width: 19px;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #cc0000;
+		border-style: none;
+		border: none;
+		background-image: url(http://cdn.images.autosport.com/greybg2.gif);
+		text-align: center;
+	}
+	.greybg2 {
+		background-image: url(http://cdn.images.autosport.com/greybg2.gif);
+	}
+	.countdowntext2 {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #cc0000;
+	}
+	.text_box2
+	{
+	background-color: #eeeeee;
+	border: 1px solid #818BAB;
+	}
+	.text_box3
+	{
+	background-color: #eeeeee;
+	border: 1px solid #cc0000;
+	}
+	.text_box4
+	{
+		background-color: #ffffff;
+		border: 1px solid #869EAC;
+		border-top: none;
+	}
+	.boxes2
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+	}
+	.boxes3
+	{
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+	}
+	.navbar
+	{
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		color: #FFFFFF;
+		font-weight: bold;
+	}
+	a.navbar {
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	a.navbar:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	a.navbar:active {
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	a.navbar:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	}
+
+	a.white {
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	a.white:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	a.white:active {
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	a.white:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	}
+
+	.white_sm {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	}
+	a.white_sm {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	a.white_sm:visited {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	a.white_sm:active {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	a.white_sm:hover {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	}
+
+	.a_small {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+	}
+	.a_normal {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		font-weight: bold;
+	}
+	.a_big {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 15px;
+	}
+
+	.nav
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10px;
+	}
+	.weather
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 11px;
+	}
+
+	.bluebg {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #FFFFFF;
+		background-image: url(http://cdn.images.autosport.com/bluebg.gif);
+	}
+
+	.bluebgl:link {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	.bluebgl:visited {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	.bluebgl:active {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	.bluebgl:hover {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #FFFFFF;
+		text-decoration: underline;
+	}
+
+	.greybg {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #818BAB;
+		background-image: url(http://cdn.images.autosport.com/greybg.gif);
+	}
+
+	a.greybgl:link {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #818BAB;
+		text-decoration: none;
+	}
+
+	a.greybgl:visited {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #818BAB;
+		text-decoration: none;
+	}
+
+	a.greybgl:active {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #818BAB;
+		text-decoration: none;
+	}
+
+	a.greybgl:hover {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #818BAB;
+		text-decoration: underline;
+	}
+
+	.greybg_sm {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		color: #818BAB;
+		background-image: url(http://cdn.images.autosport.com/greybg.gif);
+	}
+
+	a.greybg_sml:link {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		color: #818BAB;
+		text-decoration: none;
+	}
+
+	a.greybg_sml:visited {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		color: #818BAB;
+		text-decoration: none;
+	}
+
+	a.greybg_sml:active {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		color: #818BAB;
+		text-decoration: none;
+	}
+
+	a.greybg_sml:hover {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9px;
+		color: #818BAB;
+		text-decoration: underline;
+	}
+
+/* sitewide */
+
+.dots {
+	background-image: url(http://cdn.images.autosport.com/dotted_line_bg.gif);
+}
+.dots_horizontal_thin {
+	background-image: url(http://cdn.images.autosport.com/dotted_line_bg.gif);
+	margin-top:6px;
+	margin-bottom:6px;
+}
+.dots_horizontal_thick {
+	background-image: url(http://cdn.images.autosport.com/dotted_line_bg.gif);
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.dots_vertical {
+	background-image: url(http://cdn.images.autosport.com/dotted_line_bg.gif);
+	width:1px;
+}
+.text_small_grey, .small_box .text_small_grey, content .text_small_grey td
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#666666;
+}
+p, .text_medium, .text
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#000000;
+	line-height: 140%
+}
+td
+{
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#000000;
+}
+
+.subheading
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000000;
+	font-weight:bold;
+}
+.text_small, .text_small td
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+.white_small
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF;
+}
+.news_article_title
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+}
+.news_article_credits
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#666666;
+}
+.news_article_date
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+}
+.news_article_author
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	font-style:italic;
+}
+.article_title
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+}
+.article_byline {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #818BAB;
+	font-size: 13px;
+	font-weight: bold;
+}
+.article_abstract {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #818BAB;
+	font-size: 13px;
+	font-weight: bold;
+}
+.article_credit1 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+}
+.article_credit2 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+}
+
+.article_text {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+}
+.article_author {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#888888;
+}
+.article_date {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#888888;
+}
+.pre {
+	 font-family: 'Courier New';
+	 font-size: 13px;
+}
+.news_major .headline {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#000000;
+	margin-bottom:10px;
+}
+.news_major .byline {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+}
+.news_major .author {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#888888;
+}
+.news_major .date {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#888888;
+}
+
+.news_minor .headline {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+.news_minor .byline {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+}
+
+a:link, li a:link, li a {
+	color: #066A93;
+	text-decoration:none;
+}
+
+a:visited, li a:visited {
+	color: #066A93;
+	text-decoration:none;
+}
+.latest_images a:visited img, .latest_images a:link img {
+	border-color:#066A93;
+	border-width:1px;
+	border-style:solid;
+}
+.latest_images a:hover img, .latest_images a:active img {
+	border-color:#FFA500;
+	border-width:1px;
+	border-style:solid;
+}
+a:hover, li a:hover {
+	color: #FFA500;
+	text-decoration:none;
+}
+a:active, li a:active {
+	color: #FFA500;
+}
+
+.red
+{
+	color: #cc0000;
+}
+
+/* form controls */
+input, select {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+
+textarea {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 13px;
+}
+input.countdown {
+	height: 14px;
+	width: 19px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: none;
+	border: none;
+	background-color: #000000;
+	text-align: center;
+	vertical-align : text-bottom;
+}
+.countdowntext {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF
+}
+
+
+
+.boxes {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.boxes, .boxes td {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.boxes_white {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+.smalltext, smalltext td {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+.jftitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #066A93;
+}
+
+.jfbyline {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.jfcredit {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #800000;
+}
+.width275 {
+    width: 275px;
+}
+.width_mini {
+    width: 275px;
+}
+.spacer_8 {
+    height: 8px !important;
+    line-height: 8px !important;
+}

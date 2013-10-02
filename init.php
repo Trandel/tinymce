@@ -12,12 +12,13 @@ tinymce.init({
     ],
     style_formats : [
         {title : 'Normal', block : 'p'},
-        {title : 'Red Header', block : 'strong', styles : {color : '#cc0000'}},
+        {title : 'Red Header', inline : 'strong', styles : {color : '#cc0000'}},
         {title : '<pre>', block : 'pre'},
     ],
     setup: function (ed) {
         ed.on("drop", function (e) {
-            ed.insertContent(''); //special drag fix
+//            ed.insertContent(''); //special drag fix
+            console.log(e);
         });
         ed.on("blur", function (e) {
             ed.selection.collapse();
@@ -39,7 +40,7 @@ tinymce.init({
     ],
     style_formats : [
         {title : 'Normal', block : 'p'},
-        {title : 'Red Header', block : 'strong', styles : {color : '#cc0000'}},
+        {title : 'Red Header', inline : 'strong', styles : {color : '#cc0000'}},
         {title : '<pre>', block : 'pre'},
     ],
     setup: function (ed) {
@@ -64,6 +65,7 @@ tinymce.init({
     tinymce.init({
         selector: ".editable",
         theme: "trandel_light",
+        object_resizing : false,
         body_class: "width<?=$width?>",
         height: 550,
         visual: 0,
@@ -77,7 +79,7 @@ tinymce.init({
             "visualblocks code fullscreen",
             "insertdatetime table contextmenu paste asicons save"
         ],
-        content_css : 'hardcore/webeditor/hardcore.css',
+        content_css : 'tinymce/content.css',
         toolbar: "save | undo redo | bold | link image | asicons | code",
     });
 <? break; case 'minitoppper' : ?>
@@ -91,6 +93,7 @@ tinymce.init({
     tinymce.init({
         selector: ".editable",
         theme: "trandel_light",
+        object_resizing : false,
         body_class: "width_mini",
         height: 200,
         visual: 0,
@@ -104,7 +107,7 @@ tinymce.init({
             "visualblocks code fullscreen",
             "insertdatetime table contextmenu paste asicons save"
         ],
-        content_css : 'hardcore/webeditor/hardcore.css',
+        content_css : 'tinymce/content.css',
         toolbar: "save | undo redo | bold | link image | asicons | code",
     });
 <? break; default : ?>
