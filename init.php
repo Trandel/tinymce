@@ -1,7 +1,22 @@
 //<script type="text/javascript">
+var tdi_pre_process = function(plugin, args) {
+    var t = args.content;
+    t = t.replace(/\u201c/gm, '"'); //“
+    t = t.replace(/\u201d/gm, '"'); //”
+    t = t.replace(/\u2019/gm, "'"); //’
+    t = t.replace(/\u2018/gm, "'"); //‘
+    t = t.replace(/\u2026/gm, "..."); //…
+    t = t.replace(/\u2013/gm, "-"); //–
+    t = t.replace(/\u00ab/gm, '"'); //«
+    t = t.replace(/\u00bb/gm, '"'); //»
+    t = t.replace(/<br><br>/gm, "</p><p>");
+    args.content = t;
+};
+
 <?php switch ($_GET['ver']) { case 'report' : ?>
 tinymce.init({
     selector: "div.editable",
+    paste_preprocess: tdi_pre_process,
     theme: "trandel",
     inline: true,
     invalid_elements : "div",
@@ -31,6 +46,7 @@ tinymce.init({
 <? break; case 'feature' : ?>
 tinymce.init({
     selector: "div.editable",
+    paste_preprocess: tdi_pre_process,
     theme: "trandel",
     inline: true,
 //    invalid_elements : "div",
@@ -66,6 +82,7 @@ tinymce.init({
     }
     tinymce.init({
         selector: ".editable",
+        paste_preprocess: tdi_pre_process,
         theme: "trandel_light",
         object_resizing : false,
         body_class: "width<?=$width?>",
@@ -94,6 +111,7 @@ tinymce.init({
     }
     tinymce.init({
         selector: ".editable",
+        paste_preprocess: tdi_pre_process,
         theme: "trandel_light",
         object_resizing : false,
         body_class: "width_mini",
