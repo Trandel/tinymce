@@ -32,10 +32,10 @@ tinymce.init({
         {title : '<pre>', block : 'pre'},
     ],
     setup: function (ed) {
-        ed.on("drop", function (e) {
+//        ed.on("drop", function (e) {
 //            ed.insertContent(''); //special drag fix
-            console.log(e);
-        });
+//            console.log(e);
+//        });
         ed.on("blur", function (e) {
             ed.selection.collapse();
         });
@@ -62,9 +62,9 @@ tinymce.init({
         {title : '<pre>', block : 'pre'},
     ],
     setup: function (ed) {
-        ed.on("drop", function (e) {
-            ed.insertContent(''); //special drag fix
-        });
+//        ed.on("drop", function (e) {
+//            ed.insertContent(''); //special drag fix
+//        });
         ed.on("blur", function (e) {
             ed.selection.collapse();
         });
